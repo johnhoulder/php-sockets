@@ -1,0 +1,5 @@
+php-sockets is a simple chat client to see how far sockets can be pushed in PHP. The server end uses pure PHP, and the client end uses HTML5 websockets with a flash XMLSocket fallback.
+
+This is an EXPERIMENT. Don't even let it get anywhere near a live server.
+
+No, really. Don't.
