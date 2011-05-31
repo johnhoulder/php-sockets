@@ -2,4 +2,5 @@ php-sockets is a simple chat client to see how far sockets can be pushed in PHP.
 
 This is an EXPERIMENT. Don't even let it get anywhere near a live server.
 
-No, really. Don't.
+Original code by Callumacrae (http://github.com/callumacrae)
+Code redesigned and optimised for windows by GtoXic (http://github.com/gtoxic)
