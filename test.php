@@ -1,9 +1,0 @@
-<?php
-ob_start();
-echo(1);
-ob_flush();
-sleep(1);
-echo(2);
-ob_flush();
-ob_end_flush();
-?>
