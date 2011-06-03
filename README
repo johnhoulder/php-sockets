@@ -4,3 +4,13 @@ This is an EXPERIMENT. Don't even let it get anywhere near a live server.
 
 Original code by Callumacrae (http://github.com/callumacrae)
 Code redesigned and optimised for windows by GtoXic (http://github.com/gtoxic)
+
+Dependancies
+
+(Non-windows OSes) - http://www.winehq.org/ (For running the .exe client) (Optional)
+PHP - http://php.net/ (For running the server) (Required)
+Apache - http://apache.org/ (For PHP support on the server) (Required)
+
+Helpful Packages
+
+XAMPP - http://www.apachefriends.org/en/xampp.html (Contains PHP and Apache) (Recommended)

@@ -6,7 +6,7 @@ set_time_limit (0);
 $address = '127.0.0.1';
 $port = 9000;
 $max_clients = 10;
-
+error_reporting("E_ERROR");
 $clients = array();
 
 $sock = socket_create(AF_INET, SOCK_STREAM, 0);
@@ -87,16 +87,7 @@ while (true)
 			if ($input == 'exit')
 			{
 				broadcast('QUIT ' . $client[$i]['quit']['name']);
-								$fp = fopen("./server.users", "r");
-				$users = fgets($fp);
-				fclose($fp);
-				$fp2 = fopen("./server.users", "w");
-				$users = explode(" ", $users);
-				foreach($users as $user){
-					if($user != $client[$i]['user']['name']){
-						fwrite($user, $fp2." ");
-					}
-				}
+				//TODO - Add Javascript to delete user from list
 				socket_close($client[$i]['sock']);
 				unset($client[$i]);
 				echo 'Closed socket.' . PHP_EOL;
@@ -126,9 +117,7 @@ while (true)
 						{
 							$client[$i]['user']['name'] = $cmd[1];
 							broadcast('JOIN ' . $cmd[1]);
-							$fp = fopen("./server.users", "a+");
-							fwrite($client[$i]['user']['name'], $fp);
-							fclose($fp);
+							//TODO - Add Javascript to list user
 						}
 					}
 					else
